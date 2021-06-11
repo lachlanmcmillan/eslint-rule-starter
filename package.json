@@ -5,6 +5,13 @@
   "main": "src/index.js",
   "repository": "git@github.com:lachlanmcmillan/eslint-rule-starter.git",
   "author": "Lachlan McMillan <lachlanmcmillan@users.noreply.github.com>",
-  "license": "The Unlicence <https://unlicense.org/>",
-  "private": false
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "lint": "eslint sample-file.js"
+  },
+  "devDependencies": {
+    "eslint": "^7.28.0",
+    "eslint-plugin-sample": "file:./eslint"
+  }
 }
