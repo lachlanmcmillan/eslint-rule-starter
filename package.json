@@ -12,6 +12,6 @@
   },
   "devDependencies": {
     "eslint": "^7.28.0",
-    "eslint-plugin-sample": "file:./eslint"
+    "eslint-plugin-sample": "file:./packages/eslint-plugin-sample"
   }
 }
