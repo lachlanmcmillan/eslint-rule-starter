@@ -1,7 +1,7 @@
 /**
  * @fileoverview Rule to disallow importing from the eslint folder
  * @author Lachlan McMillan
- * 
+ *
  * rule reference: https://eslint.org/docs/developer-guide/working-with-rules
  */
 
@@ -19,8 +19,8 @@ module.exports = (context) => {
         context.report({
           node,
           message: "cannot import from the eslint directory",
-        })
+        });
       }
-    }
-  }
+    },
+  };
 };

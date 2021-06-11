@@ -1,7 +1,7 @@
 /**
  * @fileoverview Rule to disallow scary words in comments
  * @author Lachlan McMillan
- * 
+ *
  * rule reference: https://eslint.org/docs/developer-guide/working-with-rules
  */
 
@@ -30,10 +30,9 @@ module.exports = {
         context.report({
           node,
           message: "scary word 'danger' not allowed",
-      });
+        });
       }
-
-    }
+    };
 
     // return callbacks which eslint calls to visit nodes while traversing
     // the AST
@@ -42,7 +41,7 @@ module.exports = {
       Program: () => {
         const commentNodes = sourceCode.getAllComments();
         commentNodes.forEach(checkComment);
-      }
+      },
     };
   },
 };
