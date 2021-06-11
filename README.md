@@ -16,9 +16,10 @@ npm install && npm run lint
 
 ## Writing a rule
 
-ESLint traverses the parsed abstract syntax tree of javascript code.
+ESLint first parses code into an abstract syntax tree (AST) before checking any
+rules. So to write a rule you must understand the AST representation of your code.
 
-Use https://astexplorer.net/ to view AST of your code and write rules.
+Use https://astexplorer.net/ to view AST of your code and also write new rules.
 
 ### Configuring https://astexplorer.net/
 
